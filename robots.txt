@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://athabasca-holdings-development.github.io/sitemap.xml
