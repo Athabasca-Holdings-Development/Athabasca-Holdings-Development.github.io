@@ -1,0 +1,25 @@
+@startuml
+  
+  actor "Knowledge Expert" as ke
+  agent "Process Description" as pi
+  rectangle "Process Classification Engine" as pce
+  rectangle "Process Inpsection Engine" as pinsp
+  actor "Process" as p
+  agent "Process Collector" as pc
+  database "Raw Process Data" as db_raw
+  database "Processed Data" as db_processed
+  database "Warnings, Alerts, Insights" as db_insights
+  cloud "Alarms and Alerts" as aa
+
+  ke --> pi
+  pi --> pce
+  pi --> pinsp
+  p -> pc
+  pc -> pce
+  pce -> pinsp
+  pce -d-> db_raw
+  pce -d-> db_processed
+  pinsp -d-> db_insights
+  pinsp -> aa
+
+@enduml
