@@ -16,6 +16,22 @@
     Using an extensible system we can quickly ingest process information, rules, and encode domain knowledge to locate inefficiencies and provide an
     estimated increase in efficiency. The system can also create Pareto charts and analysis for use by the users.<br/>
     <br/>
+    <h2>Overview of the System</h2>
+    The data processing side of the system is a fairly common design. Requiring collectors to convert the processes into data that can be understood by the system.
+    <img src="process-inspection-and-evaluation-engine.png"/>
+    <br/>
+    <ul>
+      <li><b>Knowledge Expert</b> - an individual, or individuals who understands the process being monitored.
+      <li><b>Process Description</b> - an encoding of the process and its steps by the knowledge expert(s).
+      <li><b>Process</b> - the process being analyzed.
+      <li><b>Process Collector</b> - the software that captures data related to the process being performed.
+      <li><b>Process Classification Engine</b> - converts the raw data into processed information for analysis.
+      <li><b>Process Inspection Engine</b> - the core of our system. It performs analysis on the processed data and creates alerts, warnings, and information for the users.  
+      <li><b>Raw Process Data DB</b> - a database that holds the raw information of the process.
+      <li><b>Processed Data DB</b> - a database that holds the processed information of the process.
+      <li><b>Warnings, Alerts, and Insights DB</b> - a database that holds the analysis and information from the data.
+      <li><b>Alarms and Alerts</b> - signals for user and other systems relating to alarms and alerts in the data
+    </ul>
     <h2>Web Links</h2>
     Here are some links that show our current presence on the Internet. Soon we should have these all migrated to more appropriate location under
     a common domain. Until then, please feel free to browse these sites to learn about us and our CEO and founder, Saint Jovite "Kota" Youngblood.<br/>
