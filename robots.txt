@@ -1,3 +1,3 @@
 User-agent: *
-Disallow: https://athabasca-holdings-development.github.io/img-src
-Sitemap: https://athabasca-holdings-development.github.io/sitemap.xml
+Disallow: /img-src
+Sitemap: /sitemap.xml
